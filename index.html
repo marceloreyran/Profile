@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Marcelo Reyna Rangel</title>
+    <link rel="icon" href="./Images/icons8-usuario-50.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preload" href="./Images/69-691210_m.jpg)" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 300.00,
+        minWidth: 300.00,
+        scale: 3.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color2: 0xff000,
+        wingSpan: 50.00,
+        separation: 70.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+        quantity: 3.00
+      })
+
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img src="./Images/Marcelo.png" />
+        <h1>@marcelo.reyran</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://freelancer-marcelo.netlify.app/">
+            <img src="./Images/icons8-casa-100.svg" alt="Homepage" width="18" />
+            Oficial 
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCw6qCkewtWkTTg7YeYtgAKg">
+            <img src="./Images/icons8-youtube-play.svg" alt="YouTube" width="22" />
+            YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/_MarceloRR">
+            <img src="./Images/icons8-twitter-96.svg" alt="Twitter" width="22" />
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/marceloreyran">
+            <img src="./images/icons8-github-60.svg" alt="GitHub" width="22"/>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
